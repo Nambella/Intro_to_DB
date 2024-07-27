@@ -5,8 +5,10 @@ def create_database():
         # Connect to MySQL server
         connection = mysql.connector.connect(host="localhost",user="root",passwd="Namrud@1709")
 
+        # Create a cursor
         cursor = connection.cursor()
 
+        # Create the database if it doesn't exist
         cursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
 
         print("Database 'alx_book_store' created successfully!")
@@ -22,4 +24,5 @@ def create_database():
 
 if __name__ == "__main__":
     create_database()
+      
 

@@ -1,1 +1,2 @@
-create table book
+create table books 
+
