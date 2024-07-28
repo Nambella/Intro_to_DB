@@ -38,3 +38,4 @@ DELIMITER ;
 -- Call the stored procedure to list tables in alx_book_store
 CALL ListTables('alx_book_store');
 SHOW TABLES;
+USE alx_book_store;
